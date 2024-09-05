@@ -122,9 +122,9 @@
 
       document.body.appendChild(script);
 
-      function alerted(message)
+      function alerted(id)
       {
-    alert(message);
+        unityINS.SendMessage('jshook','setId',id)
 
         //unityINS.SendMessage('jshook','showhide');
           }
